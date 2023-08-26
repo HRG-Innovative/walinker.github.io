@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>create WhatsApp link generator | Generate WhatsApp Link FREE</title>
+        <meta name="description" content="Effortlessly Create WhatsApp Links for Free with Our Generator. Instantly Generate Clickable WhatsApp Links. Boost Communication. Try Now!">
+        <meta name="keywords" content="WhatsApp URL maker
+        Custom WhatsApp link generator
+        Quick link generator for WhatsApp
+        Click-to-chat link creator
+        WhatsApp marketing tools
+        Share via WhatsApp links
+        Boost communication with WhatsApp links
+        Streamline messaging with generated links
+        Enhanced WhatsApp sharing
+        Effortless link creation for WhatsApp">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="manifest" href="manifest.json">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">WAlinker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy.html">Privacy Policy</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tos.html">Terms of Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="copyright.html">Copyright Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- for image -->
+        <!-- <div class="col-md-6 align-self-center">
+        <img src="/images/whatsapplink.jpeg" alt="WhatsApp Generator" class="img-fluid">
+      </div> -->
+        <div class="hero text-center">
+            <h1 style="font-size: 50px;">Generate WhatsApp Account Links For FREE</h1>
+            <p class ="lead"> <center><strong>The WhatsApp link generator makes sharing contacts easier by creating clickable links. This helps communication become smoother and more efficient</strong></center></p>
+            <body>
+                <div class="container">
+                    <h2 class="mb-4 text-center">WhatsApp Link Generator</h2>
+                    <form>
+                        <div class="form-row">
+                            <label for="phoneNumber" class="form-label">Phone Number (with Country Code)</label>
+                            <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Enter your message" style="resize: none;"></textarea>
+                        </div>                       
+                        
+                        <div>
+                            <button type="submit" class="btn btn-primary">Generate Link & QR Code</button>
+                        </div>
+                
+                    <div id="whatsappLink" class="mt-3"></div>
+                    <div id="qrCode" class="mt-3"></div>
+                </div>
+                    </form>
+                    <button id="installButton" class="download-button"><span>Install Now</span></button>
+                    <div style="text-align: center;">
+                      <small class="text-muted">Installable only in updated chrome browsers.</small>
+                      </div> 
+                    <script>
+                        let deferredPrompt;
+                      
+                        window.addEventListener('beforeinstallprompt', (event) => {
+                          event.preventDefault();
+                          deferredPrompt = event;
+                      
+                          // Show the install button if the app isn't already installed
+                          if (!isAppInstalled()) {
+                            document.getElementById('installButton').style.display = 'block';
+                          } else {
+                            showNotification('App Already Installed');
+                          }
+                        });
+                      
+                        // Handle install button click
+                        document.getElementById('installButton').addEventListener('click', () => {
+                          if (deferredPrompt) {
+                            deferredPrompt.prompt();
+                      
+                            deferredPrompt.userChoice.then((choiceResult) => {
+                              if (choiceResult.outcome === 'accepted') {
+                                console.log('User accepted the install prompt');
+                              } else {
+                                console.log('User dismissed the install prompt');
+                              }
+                      
+                              // Reset the deferred prompt
+                              deferredPrompt = null;
+                            });
+                          }
+                        });
+                      
+                        // Check if the app is already installed
+                        function isAppInstalled() {
+                          if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) {
+                            return true; // The app is already installed
+                          }
+                      
+                          // Check if the app is installed using older methods
+                          if (window.matchMedia('(display-mode: fullscreen)').matches) {
+                            return true; // The app is already installed
+                          }
+                      
+                          return false; // The app is not installed
+                        }
+                      
+                        // Show notification to the user
+                        function showNotification(message) {
+                          // Replace this with your actual notification implementation
+                          alert(message);
+                        }
+                      </script>
+                              </div>
+                          </div>
+                    <section class="bg-light py-5">
+                        <div class="container text-center">
+                            <h2>How WhatsApp Link Generator Works</h2>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/number-one.png" alt="Step 1" class="img-fluid mb-3" width="110" />
+                                    <h3>Step Number 1</h3>
+                                    <p>Enter the recipient's phone number and message.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/number-2.png" alt="Step 2" class="img-fluid mb-3" width="110px" />
+                                    <h3>Step Number 2</h3>
+                                    <p>Click on <strong> 'Generate Link'</strong> to Generate Your Account Link</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/number-3.png" alt="Step 3" class="img-fluid mb-3" width="110px" />
+                                    <h3>Step Number 3</h3>
+                                    <p>Copy and Share Your Direct WhatsApp Conversation Link.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                  <!-- AddToAny BEGIN -->
+<div class="display: flex; justify-content: center; align-items: center; padding: 5px; a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_linkedin"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_facebook_messenger"></a>
+    <a class="a2a_button_whatsapp"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
+                       
+                        <div class="container">
+                            <!-- information -->
+                            <h2>1. Simplify Communication with a WhatsApp Link Generator</h2>
+                            <p class="lead">In the rapidly evolving landscape of digital communication, instant messaging applications have taken center stage. WhatsApp, with its user-friendly interface and widespread adoption, has become a cornerstone of how we connect with friends, family, and colleagues. To further enhance this experience, the emergence of WhatsApp link generators has revolutionized the way we share contact information. In this article, we'll delve into the world of WhatsApp link generators, exploring their functionalities, benefits, and the strategies to ensure AdSense approval for content related to these tools.</p>
+                            
+                            <h2>2. Understanding WhatsApp Link Generators</h2>
+                            <p class="lead">At its core, a WhatsApp link generator is a web-based tool designed to simplify the process of initiating conversations on the WhatsApp platform. Traditionally, exchanging contact details involved sharing phone numbers, which could be both cumbersome and potentially intrusive. However, with the advent of WhatsApp link generators, individuals can generate a unique URL that, when clicked, initiates a conversation directly on WhatsApp. This eliminates the need to disclose personal phone numbers while facilitating seamless communication.</p>
+                            <img id="images" src="https://www.callbell.eu/wp-content/uploads/2021/02/WhatsApp-Link-In-Signatures-Image_OG-1080x630.jpg" alt="how whatsapp link generator work">
+                            
+                            <h2>3. Advantages of Using WhatsApp Link Generators</h2>
+                            <p><strong>1. Efficiency and Convenience</strong>: WhatsApp link generators eliminate the hassle of manually sharing phone numbers. With a few clicks, users can create a custom link that serves as a virtual contact card.</p>
+                            <p><strong>2. Enhanced Privacy</strong>: By sharing a generated link instead of a phone number, users can protect their privacy and control who can initiate conversations.</p>
+                            <p><strong>3. Seamless Networking</strong>: For professionals and businesses, WhatsApp link generators offer a streamlined method for sharing contact information during networking events or business interactions.</p>
+                            <p><strong>4. Global Accessibility</strong>: With WhatsApp's global user base, these generators transcend geographical boundaries, allowing connections with individuals from different countries.</p>
+                            
+                            <h2>4. Functionality and Features</h2>
+                            <p class="lead">Modern WhatsApp link generators offer a range of features that enhance user experience and customization:</p>
+                            <ul>
+                              <li><strong>Pre-Filled Messages</strong>: Users can personalize the initial message that appears when someone clicks the link, facilitating smoother communication.</li>
+                              <li><strong>QR Code Integration</strong>: Many generators provide the option to generate QR codes alongside the link, making it easier for users to scan and connect.</li>
+                              <li><strong>Call-to-Action Buttons</strong>: Some tools allow the addition of call-to-action buttons within the generated link, enabling users to take specific actions such as sending a message or initiating a call.</li>
+                              <li><strong>Link Customization</strong>: Users can often customize the appearance of the link to align with their personal branding or website aesthetics.</li>
+                            </ul>
+                            <!-- content -->
+                        </div>
+                        <hr />
+                        <!-- faqs -->
+                        <div class="container mt-5">
+                            <h1 class="text-center mb-4">WhatsApp Link Generator FAQs</h1>
+                    
+                            <div class="accordion" id="faqAccordion">
+                                <!-- FAQ 1 -->
+                                <div class="card">
+                                    <div class="card-header" id="faqHeading1">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                                What is a WhatsApp link generator and how does it work?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                        <div class="card-body">
+                                            A WhatsApp link generator is a convenient tool that simplifies contact sharing by creating clickable links. When someone clicks the link, it initiates a direct conversation on WhatsApp with the provided contact. This streamlines communication and saves time.
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- FAQ 2 -->
+                                <div class="card">
+                                    <div class="card-header" id="faqHeading2">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                                What are the benefits of using a WhatsApp link generator?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                        <div class="card-body">
+                                            Utilizing a WhatsApp link generator enhances communication efficiency. It replaces the need to share lengthy phone numbers, allowing you to share a single clickable link that opens a direct chat on WhatsApp. This user-friendly approach improves the user experience and simplifies contact sharing.
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- FAQ 3 -->
+                                <div class="card">
+                                    <div class="card-header" id="faqHeading3">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                                Can I customize the WhatsApp link generated?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                        <div class="card-body">
+                                            Yes, many WhatsApp link generators offer customization options. You can add details like names or descriptions to the link, providing clarity about the conversation's context. This customization enhances the usefulness of the generated links.
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- FAQ 4 -->
+                                <div class="card">
+                                    <div class="card-header" id="faqHeading4">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                                Is the generated WhatsApp link permanent?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                                        <div class="card-body">
+                                            Yes, the generated WhatsApp link remains valid as long as the associated phone number is active on WhatsApp. If the phone number becomes inactive or changes, the link may no longer function correctly.
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- FAQ 5 -->
+                                <div class="card">
+                                    <div class="card-header" id="faqHeading5">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                                Is using a WhatsApp link generator safe?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                                        <div class="card-body">
+                                            Yes, reputable WhatsApp link generators are safe to use. However, exercise caution while providing personal information online. Choose well-known tools to ensure your data's security and privacy.
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <!-- footer -->
+
+                        <footer>
+                            <div class="container">
+                                <h2>Connect with WhatsAppgenics</h2>
+                                <ul class="list-inline social-icons mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container text-center">
+                                <p>&copy; 2023 <a href="index.html"> WhatsAppgenics</a>. All rights reserved.</p>
+                            </div>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                            <!-- Link to Font Awesome for icons -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+                            <script src="script.js"></script>
+                        </footer>
+                    </section>
+    </body>
+</html>
